@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EV2.SU - VPN нового поколения</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Подключение стилей -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1DRF20KS2M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1DRF20KS2M');
+  </script>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+      m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script',' https://mc.yandex.ru/metrika/tag.js?id=106289414', 'ym');
+
+    ym(106289414, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+  </script>
+</head>
+
+<body>
+  <!-- PRELOADER -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-content">
+      <div class="lock-icon">🔒</div>
+      <div class="loading-text">Установка защищенного соединения...</div>
+      <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <span class="logo-text">EV2.<span class="accent">SU</span></span>
+      </a>
+      
+      <nav class="nav">
+        <a href="#features" class="nav-link">Преимущества</a>
+        <a href="#locations" class="nav-link">Локации</a>
+        <a href="#pricing" class="nav-link">Тарифы</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+      
+      <a href="https://cabinet.ev2.su" class="btn btn-outline">Личный кабинет</a>
+      
+      <button class="mobile-toggle" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    
+    <div class="container hero-content">
+      <div class="status-badge animate-fade-in">
+        <span class="status-dot"></span>
+        Все системы работают нормально
+      </div>
+      
+      <h1 class="hero-title">
+        <span class="title-line">Свободный доступ</span>
+        <span class="title-line gradient-text">к любому контенту</span>
+      </h1>
+      
+      <p class="hero-subtitle">
+        Быстрый VPN с шифрованием AES-256. Без логов. Без ограничений. 
+        Работает на всех устройствах.
+      </p>
+      
+      <div class="hero-buttons">
+        <a href="https://cabinet.ev2.su" class="btn btn-primary btn-lg">
+          Получить ключи
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <a href="#pricing" class="btn btn-secondary btn-lg">Выбрать тариф</a>
+      </div>
+      
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-value">50+</div>
+          <div class="stat-label">Серверов</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">∞</div>
+          <div class="stat-label">Трафик</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">24/7</div>
+          <div class="stat-label">Поддержка</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RUNNING LINE 1 -->
+  <section class="running-line running-line-dark">
+    <div class="running-track">
+      <div class="running-content">
+        <span class="running-item">🚀 Высокая скорость</span>
+        <span class="running-item running-item-accent">AES-256</span>
+        <span class="running-item">🔒 Без логов</span>
+        <span class="running-item running-item-accent">Unlimited</span>
+        <span class="running-item">🌍 50+ локаций</span>
+        <span class="running-item running-item-accent">Secure</span>
+        <span class="running-item">⚡ Быстрое подключение</span>
+        <span class="running-item running-item-accent">No Limits</span>
+      </div>
+      <div class="running-content" aria-hidden="true">
+        <span class="running-item">🚀 Высокая скорость</span>
+        <span class="running-item running-item-accent">AES-256</span>
+        <span class="running-item">🔒 Без логов</span>
+        <span class="running-item running-item-accent">Unlimited</span>
+        <span class="running-item">🌍 50+ локаций</span>
+        <span class="running-item running-item-accent">Secure</span>
+        <span class="running-item">⚡ Быстрое подключение</span>
+        <span class="running-item running-item-accent">No Limits</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Почему выбирают EV2.SU</h2>
+        <p class="section-subtitle">Технологии будущего для вашей безопасности уже сегодня</p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card feature-card-green">
+          <div class="feature-icon">📱</div>
+          <h3>Мультиплатформенность</h3>
+          <p>Работает на Windows, macOS, Android, iOS, Linux и Smart TV</p>
+          <div class="feature-tags">
+            <span class="tag">Android</span>
+            <span class="tag">iOS</span>
+            <span class="tag">Windows</span>
+          </div>
+        </div>
+        
+        <div class="feature-card feature-card-blue">
+          <div class="feature-icon">🛡️</div>
+          <h3>Полная анонимность</h3>
+          <p>Не храним логи, не отслеживаем активность, используем современные протоколы</p>
+          <div class="feature-tags">
+            <span class="tag">No Logs</span>
+            <span class="tag">AES-256</span>
+          </div>
+        </div>
+        
+        <div class="feature-card feature-card-purple">
+          <div class="feature-icon">⚡</div>
+          <h3>Максимальная скорость</h3>
+          <p>Оптимизированные маршруты и мощные серверы для стабильного соединения</p>
+          <div class="feature-tags">
+            <span class="tag">10 Gbps</span>
+            <span class="tag">Low Ping</span>
+          </div>
+        </div>
+        
+        <div class="feature-card feature-card-amber">
+          <div class="feature-icon">🌐</div>
+          <h3>Глобальное покрытие</h3>
+          <p>Серверы в Европе, Азии и США. Выбирайте любую страну в один клик</p>
+          <div class="feature-tags">
+            <span class="tag">50+ стран</span>
+            <span class="tag">Auto Select</span>
+          </div>
+        </div>
+        
+        <div class="feature-card feature-card-pink">
+          <div class="feature-icon">💰</div>
+          <h3>Реферальная программа</h3>
+          <p>Зарабатывайте 40% с платежей друзей + 50₽ бонус за каждого</p>
+          <div class="feature-tags">
+            <span class="tag">40%</span>
+            <span class="tag">Бонусы</span>
+          </div>
+        </div>
+        
+        <div class="feature-card feature-card-cyan">
+          <div class="feature-icon">🎧</div>
+          <h3>Поддержка 24/7</h3>
+          <p>Помогаем с настройкой, отвечаем на вопросы в любое время суток</p>
+          <div class="feature-tags">
+            <span class="tag">Live Chat</span>
+            <span class="tag">Fast Response</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATIONS SECTION -->
+  <section class="locations" id="locations">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Наши локации</h2>
+        <p class="section-subtitle">Выбирайте сервер в любой точке мира</p>
+      </div>
+      
+      <div class="locations-grid" id="locationsGrid">
+        <!-- Локации будут загружены через JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING SECTION -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Тарифные планы</h2>
+        <p class="section-subtitle">Выберите подходящий вариант или начните с бесплатного теста</p>
+      </div>
+      
+      <div class="pricing-grid">
+        <!-- FREE TRIAL -->
+        <div class="pricing-card">
+          <div class="pricing-badge">Старт</div>
+          <div class="pricing-header">
+            <h3>Пробный период</h3>
+            <div class="pricing-price">
+              <span class="price">0₽</span>
+              <span class="period">/ 3 дня</span>
+            </div>
+          </div>
+          
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> 8 ГБ трафика</li>
+            <li><span class="check">✓</span> 2 устройства</li>
+            <li><span class="check">✓</span> Базовые локации</li>
+            <li><span class="check">✓</span> Поддержка 24/7</li>
+          </ul>
+          
+          <a href="https://cabinet.ev2.su" class="btn btn-outline btn-block">Попробовать бесплатно</a>
+        </div>
+        
+        <!-- BEST VALUE -->
+        <div class="pricing-card pricing-card-featured">
+          <div class="pricing-badge pricing-badge-popular">Популярный</div>
+          <div class="pricing-header">
+            <h3>Оптимальный</h3>
+            <div class="pricing-price">
+              <span class="price">от 99₽</span>
+              <span class="period">/ месяц</span>
+            </div>
+          </div>
+          
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> 100 ГБ трафика</li>
+            <li><span class="check">✓</span> До 2 устройств</li>
+            <li><span class="check">✓</span> EU + RU серверы</li>
+            <li><span class="check">✓</span> Приоритетная поддержка</li>
+            <li><span class="check">✓</span> Все протоколы</li>
+          </ul>
+          
+          <a href="https://cabinet.ev2.su" class="btn btn-primary btn-block">Выбрать тариф</a>
+        </div>
+        
+        <!-- PREMIUM -->
+        <div class="pricing-card">
+          <div class="pricing-badge">PRO</div>
+          <div class="pricing-header">
+            <h3>Premium</h3>
+            <div class="pricing-price">
+              <span class="price">от 240₽</span>
+              <span class="period">/ месяц</span>
+            </div>
+          </div>
+          
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> Безлимитный трафик</li>
+            <li><span class="check">✓</span> До 5 устройств</li>
+            <li><span class="check">✓</span> Все локации</li>
+            <li><span class="check">✓</span> Максимальная скорость</li>
+            <li><span class="check">✓</span> VIP поддержка</li>
+          </ul>
+          
+          <a href="https://cabinet.ev2.su" class="btn btn-outline btn-block">Подключить</a>
+        </div>
+        
+        <!-- SQUAD -->
+        <div class="pricing-card">
+          <div class="pricing-badge">Команда</div>
+          <div class="pricing-header">
+            <h3>Squad</h3>
+            <div class="pricing-price">
+              <span class="price">от 599₽</span>
+              <span class="period">/ месяц</span>
+            </div>
+          </div>
+          
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> от 1000 ГБ трафика</li>
+            <li><span class="check">✓</span> 10+ устройств</li>
+            <li><span class="check">✓</span> Все серверы</li>
+            <li><span class="check">✓</span> Выделенная поддержка</li>
+            <li><span class="check">✓</span> API доступ</li>
+          </ul>
+          
+          <a href="https://cabinet.ev2.su" class="btn btn-outline btn-block">Для команды</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RUNNING LINE 2 -->
+  <section class="running-line running-line-light">
+    <div class="running-track">
+      <div class="running-content">
+        <span class="running-item">🔐 Шифрование данных</span>
+        <span class="running-item running-item-accent">Fast VPN</span>
+        <span class="running-item">🌐 Обход блокировок</span>
+        <span class="running-item running-item-accent">Premium</span>
+        <span class="running-item">📺 Доступ к стримингу</span>
+        <span class="running-item running-item-accent">Gaming</span>
+        <span class="running-item">🎯 Низкий пинг</span>
+        <span class="running-item running-item-accent">Stable</span>
+      </div>
+      <div class="running-content" aria-hidden="true">
+        <span class="running-item">🔐 Шифрование данных</span>
+        <span class="running-item running-item-accent">Fast VPN</span>
+        <span class="running-item">🌐 Обход блокировок</span>
+        <span class="running-item running-item-accent">Premium</span>
+        <span class="running-item">📺 Доступ к стримингу</span>
+        <span class="running-item running-item-accent">Gaming</span>
+        <span class="running-item">🎯 Низкий пинг</span>
+        <span class="running-item running-item-accent">Stable</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Частые вопросы</h2>
+        <p class="section-subtitle">Ответы на популярные вопросы о нашем сервисе</p>
+      </div>
+      
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            Какие приложения поддерживаются?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Мы поддерживаем все популярные клиенты: Xray, V2ray, Nekobox, Clash, а также нативные приложения для Windows, macOS, Android и iOS.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            Есть ли бесплатный тестовый период?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Да! Мы предоставляем 3 дня бесплатного доступа с 8 ГБ трафика. Карта не требуется.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            На каких устройствах работает VPN?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Наш сервис работает на всех платформах: Windows, macOS, Linux, Android, iOS, роутерах и Smart TV.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            Что делать если закончился трафик?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Вы можете докупить дополнительный трафик в личном кабинете или перейти на тариф с безлимитным трафиком.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            Как работает реферальная программа?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Вы получаете 40% от платежей приглашенных друзей + 50₽ бонус каждому при регистрации по вашей ссылке.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            Как связаться с поддержкой?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Напишите нам через личный кабинет или в Telegram. Мы отвечаем в течение 15 минут в рабочее время.</p>
+            <a href="https://cabinet.ev2.su/support" class="btn btn-sm btn-primary" target="_blank">Написать в поддержку</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Готовы начать?</h2>
+        <p>Получите бесплатный доступ прямо сейчас</p>
+        <a href="https://cabinet.ev2.su" class="btn btn-white btn-lg">
+          Начать бесплатно
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">EV2.SU</div>
+          <p>Ваш надежный VPN сервис</p>
+          <div class="social-links">
+            <a href="https://vk.com/evpnunlock" target="_blank" class="social-link" aria-label="VK">
+              <svg viewBox="0 0 24 24"><path d="M12.65 17.9h1.08s.33-.04.5-.22c.16-.17.16-.49.16-.49s-.02-1.5.67-1.72c.68-.22 1.56 1.44 2.49 2.08.7.47 1.24.37 1.24.37l2.49-.03s1.3-.08.68-1.1c-.05-.09-.36-.76-1.88-2.14-1.59-1.45-1.37-1.21.54-3.71 1.16-1.55 1.63-2.49 1.48-2.9-.14-.39-.98-.29-.98-.29l-2.8.02s-.21-.03-.36.07c-.15.1-.25.33-.25.33s-.45 1.21-1.06 2.24c-1.28 2.17-1.8 2.28-2.01 2.14-.49-.32-.36-1.29-.36-1.98 0-2.15.33-3.05-.64-3.28-.32-.08-.56-.13-1.39-.14-1.06-.01-1.96.01-2.46.25-.34.17-.6.55-.44.57.2.03.65.12.89.43.31.41.3 1.34.3 1.34s.18 2.54-.43 2.86c-.42.22-1.01-.23-2.27-2.19-.65-1.05-1.14-2.22-1.14-2.22s-.09-.22-.23-.34c-.18-.15-.43-.2-.43-.2l-2.66.02s-.4.01-.55.18c-.13.15-.02.45-.02.45s2.08 4.87 4.45 7.33c2.16 2.24 4.6 2.09 4.6 2.09z"/></svg>
+            </a>
+            <a href="https://t.me/ev2su" target="_blank" class="social-link" aria-label="Telegram">
+              <svg viewBox="0 0 24 24"><path d="M21.8 4.6c.2-1-.7-1.7-1.6-1.4L2.7 10.3c-1 .4-1 1.8.1 2.1l4.6 1.5 1.8 5.5c.3.9 1.4 1.1 2 .4l2.6-3.1 4.9 3.6c.8.6 2 .1 2.2-.9L21.8 4.6zm-14 8.7 9.9-6.2c.2-.1.4.2.2.4l-8.2 7.4-.3 3.2c0 .3-.4.3-.5.1l-1.5-4.3-3.1-1c-.2-.1-.2-.4 0-.5l13.7-5.3c.3-.1.5.3.2.5l-10.4 5.7z"/></svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-platforms">
+          <div class="platform-badge">Windows</div>
+          <div class="platform-badge">macOS</div>
+          <div class="platform-badge">Android</div>
+          <div class="platform-badge">iOS</div>
+          <div class="platform-badge">Linux</div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© 2026 EV2.SU. Все права защищены.</p>
+        <div class="footer-links">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Условия использования</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/script.js" defer></script>
+</body>
+</html>
