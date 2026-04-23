@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EV2.SU - Современный VPN</title>
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1DRF20KS2M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1DRF20KS2M');
+  </script>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+      m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script',' https://mc.yandex.ru/metrika/tag.js?id=106289414', 'ym');
+    ym(106289414, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="loading">
+  <!-- PRELOADER -->
+  <div class="preloader" id="preloader">
+    <div class="loader-content">
+      <div class="loader-icon">🔒</div>
+      <div class="loader-status">Установка защищенного соединения...</div>
+      <div class="progress-track"><div class="progress-bar" id="progressBar"></div></div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <nav class="site-nav">
+      <a href="#" class="logo">
+        <i class="fas fa-shield-halved logo__icon"></i>
+        <span class="logo__text">EV2.<span class="logo__accent">SU</span></span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#locations" class="nav-link">Локации</a>
+        <a href="#advantages" class="nav-link">Преимущества</a>
+        <a href="#pricing" class="nav-link">Тарифы</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="https://cabinet.ev2.su" class="nav-link nav-cabinet">Личный кабинет</a>
+        <button id="adminBtn" class="admin-btn" title="Админ-панель"><i class="fas fa-cog"></i></button>
+      </div>
+
+      <button class="nav-toggle" type="button" aria-label="Menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </nav>
+
+    <aside class="mobile-nav" id="mobileNav" hidden>
+      <div class="mobile-nav__head">
+        <span class="mobile-logo">EV2.<span class="mobile-logo__accent">SU</span></span>
+        <button class="mobile-nav__close" type="button">✕</button>
+      </div>
+      <a href="#locations" class="mobile-link">Локации</a>
+      <a href="#advantages" class="mobile-link">Преимущества</a>
+      <a href="#pricing" class="mobile-link">Тарифы</a>
+      <a href="#faq" class="mobile-link">FAQ</a>
+      <a href="https://cabinet.ev2.su" class="mobile-link mobile-cabinet">Личный кабинет</a>
+    </aside>
+    <div class="nav-backdrop" data-nav-backdrop hidden></div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-content">
+      <div class="status-badge">
+        <span class="status-indicator-dot"></span>
+        Соединение защищено
+      </div>
+      <h1 class="hero-title">Оптимизация доступа</h1>
+      <p>Разблокировка через ключи шифрования</p>
+      <div class="buttons">
+        <a href="https://cabinet.ev2.su/" class="btn-primary">Получить ключи</a>
+        <a href="#locations" class="btn-secondary">Выбрать страну</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TICKER 1 -->
+  <section class="ticker-section ticker-dark">
+    <div class="ticker-track">
+      <div class="ticker-group" id="ticker1Content"></div>
+      <div class="ticker-group" aria-hidden="true" id="ticker1Clone"></div>
+    </div>
+  </section>
+
+  <!-- LOCATIONS -->
+  <section id="locations" class="locations-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Доступные локации</h2>
+        <p>Все серверы работают в режиме 24/7</p>
+      </div>
+      <div class="locations-grid" id="serversContainer"></div>
+    </div>
+  </section>
+
+  <!-- ADVANTAGES -->
+  <section class="advantages" id="advantages">
+    <div class="advantages-wrap">
+      <div class="section-header">
+        <h2>Преимущества</h2>
+        <p>Почему выбирают EV2.SU</p>
+      </div>
+      <div class="advantages-grid" id="advantagesContainer"></div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="pricing-wrap">
+      <div class="section-header">
+        <h2>Тарифы</h2>
+        <p>Выберите план, который подходит именно вам</p>
+      </div>
+      <div class="pricing-grid" id="pricingContainer"></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq-section">
+    <div class="faq-container">
+      <div class="section-header">
+        <h2>Часто задаваемые вопросы</h2>
+      </div>
+      <div class="faq-list" id="faqContainer"></div>
+    </div>
+  </section>
+
+  <!-- TICKER 2 -->
+  <section class="ticker-section ticker-light">
+    <div class="ticker-track">
+      <div class="ticker-group" id="ticker2Content"></div>
+      <div class="ticker-group" aria-hidden="true" id="ticker2Clone"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="footer-logo">EV2.SU</div>
+        <p>Безопасность начинается здесь.</p>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 EV2.SU</p>
+        <div class="footer-social">
+          <a href="https://vk.com/evpnunlock" target="_blank" class="social-link"><i class="fab fa-vk"></i></a>
+          <a href="https://t.me/ev2su" target="_blank" class="social-link"><i class="fab fa-telegram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ADMIN PANEL MODAL -->
+  <div class="modal-overlay hidden" id="adminModal">
+    <div class="admin-panel">
+      <button class="modal-close" id="closeAdmin">&times;</button>
+      <h2>Админ-панель</h2>
+      
+      <!-- Login Form -->
+      <div id="adminLogin">
+        <input type="text" id="adminUser" placeholder="Логин">
+        <input type="password" id="adminPass" placeholder="Пароль">
+        <button class="btn-primary" id="loginBtn">Войти</button>
+        <p class="login-hint">Демо: admin / admin</p>
+      </div>
+
+      <!-- Admin Dashboard -->
+      <div id="adminDashboard" class="hidden">
+        <div class="admin-tabs">
+          <button class="tab-btn active" data-tab="locations">Локации</button>
+          <button class="tab-btn" data-tab="pricing">Тарифы</button>
+          <button class="tab-btn" data-tab="faq">FAQ</button>
+          <button class="tab-btn" data-tab="ticker">Бегущая строка</button>
+        </div>
+
+        <div class="tab-content">
+          <!-- Locations Tab -->
+          <div id="tab-locations" class="tab-pane active">
+            <h3>Управление локациями</h3>
+            <div class="admin-form">
+              <input type="text" id="locName" placeholder="Название страны">
+              <input type="text" id="locFlag" placeholder="Флаг (emoji)">
+              <input type="number" id="locPing" placeholder="Ping (мс)">
+              <select id="locStatus">
+                <option value="online">Онлайн</option>
+                <option value="offline">Офлайн</option>
+              </select>
+              <button class="btn-primary" id="addLocation">Добавить</button>
+            </div>
+            <div id="adminLocationsList" class="admin-list"></div>
+          </div>
+
+          <!-- Pricing Tab -->
+          <div id="tab-pricing" class="tab-pane">
+            <h3>Управление тарифами</h3>
+            <div class="admin-form">
+              <input type="text" id="priceName" placeholder="Название тарифа">
+              <input type="text" id="priceAmount" placeholder="Цена (например: 99₽)">
+              <input type="text" id="pricePeriod" placeholder="Период (например: / 1 месяц)">
+              <input type="text" id="priceBadge" placeholder="Бейдж (Top, Pro и т.д.)">
+              <textarea id="priceFeatures" placeholder="Особенности (каждая с новой строки)"></textarea>
+              <button class="btn-primary" id="addPricing">Добавить</button>
+            </div>
+            <div id="adminPricingList" class="admin-list"></div>
+          </div>
+
+          <!-- FAQ Tab -->
+          <div id="tab-faq" class="tab-pane">
+            <h3>Управление FAQ</h3>
+            <div class="admin-form">
+              <input type="text" id="faqQuestion" placeholder="Вопрос">
+              <textarea id="faqAnswer" placeholder="Ответ"></textarea>
+              <button class="btn-primary" id="addFaq">Добавить</button>
+            </div>
+            <div id="adminFaqList" class="admin-list"></div>
+          </div>
+
+          <!-- Ticker Tab -->
+          <div id="tab-ticker" class="tab-pane">
+            <h3>Бегущая строка</h3>
+            <div class="admin-form">
+              <input type="text" id="tickerItem" placeholder="Текст для строки">
+              <select id="tickerType">
+                <option value="filled">Заполненный</option>
+                <option value="outlined">Контурный</option>
+              </select>
+              <button class="btn-primary" id="addTicker">Добавить</button>
+            </div>
+            <div id="adminTickerList" class="admin-list"></div>
+          </div>
+        </div>
+
+        <button class="btn-secondary" id="resetData">Сбросить все данные</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/admin.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
